@@ -7,21 +7,21 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="385dp"
-        android:layout_height="500dp"
-        android:elevation="50dp"
-        app:cardCornerRadius="15dp"
+        android:id="@+id/materialCardView"
+        android:layout_width="395dp"
+        android:layout_height="382dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.279">
+        app:layout_constraintVertical_bias="0.103">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
+            android:layout_height="154dp"
             app:srcCompat="@drawable/img_1" />
 
         <TextView
@@ -29,30 +29,77 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="159dp"
             android:text="Create Alarm Time"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
-            android:text="By pressing buttons, Alarm can be created and cancelled."
-            android:textStyle="normal"
-            android:textSize="17dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="260dp"/>
+            android:layout_marginTop="185dp"
+            android:text="By pressing buttons, Alarm can be created and cancelled."
+            android:textSize="15dp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="374dp"
+            android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="320dp"
+            android:layout_marginTop="225dp"
             android:text="Check Current time by looking below real digital clock."
-            android:textSize="17dp"
+            android:textSize="15dp"
             android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="255dp"
+            android:text="11:49:15 PM Aug,14 2022"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="      Create Alarm"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="320dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="322dp"
+            android:layout_marginStart="13dp"
+            android:backgroundTint="#00FFFFFF"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/baseline_alarm_add_24" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="395dp"
+        android:layout_height="248dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.869">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="154dp"
+            app:srcCompat="@drawable/img_1" />
     </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
