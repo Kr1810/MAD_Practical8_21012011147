@@ -8,20 +8,20 @@ import android.os.IBinder
 class AlarmService : Service() {
     lateinit var player: MediaPlayer
 
-    override fun onBind(intent: Intent): IBinder {
-        TODO("Return the communication channel to the service.")
-    }
-
-    override fun onDestroy() {
-        player.
-        super.onDestroy()
+    override fun onBind(intent: Intent): IBinder? {
+        return null
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        if (intent != null){
-            player=MediaPlayer.create(this,R.raw.alarm)
+        if (intent != null) {
+            player = MediaPlayer.create(this, R.raw.alarm)
             player.start()
         }
-           return START_STICKY
+        return START_STICKY
+    }
+
+    override fun onDestroy() {
+        player.stop()
+        super.onDestroy()
     }
 }
